@@ -106,7 +106,7 @@ prev.addEventListener('click', function() {
     } else {
         elementActive--
     }
-    
+
     //image
     document.querySelector('.image-container.active').classList.remove('active');
     document.getElementsByClassName('image-container')[elementActive].classList.add('active');
@@ -114,4 +114,79 @@ prev.addEventListener('click', function() {
     //thumb
     document.querySelector('.thumb.active').classList.remove('active');
     document.getElementsByClassName('thumb')[elementActive].classList.add('active');
+})
+
+
+//BONUS: click su ogni immagine
+//refs
+const image1 = document.getElementsByClassName('thumb')[0];
+const image2 = document.getElementsByClassName('thumb')[1];
+const image3 = document.getElementsByClassName('thumb')[2];
+const image4 = document.getElementsByClassName('thumb')[3];
+const image5 = document.getElementsByClassName('thumb')[4];
+
+
+//click sulla prima immagine
+image1.addEventListener('click', function() {
+    //image
+    document.querySelector('.image-container.active').classList.remove('active');
+    document.getElementsByClassName('image-container')[0].classList.add('active');
+
+    document.querySelector('.thumb.active').classList.remove('active');
+    document.getElementsByClassName('thumb')[0].classList.add('active');
+
+    //aggiorniamo il numero active
+    elementActive = 0;
+})
+
+//click sulla seconda immagine
+image2.addEventListener('click', function() {
+    //image
+    document.querySelector('.image-container.active').classList.remove('active');
+    document.getElementsByClassName('image-container')[1].classList.add('active');
+
+    document.querySelector('.thumb.active').classList.remove('active');
+    document.getElementsByClassName('thumb')[1].classList.add('active');
+
+    //aggiorniamo il numero active
+    elementActive = 1;
+})
+
+//click sulla terza immagine
+image3.addEventListener('click', function() {
+    //image
+    document.querySelector('.image-container.active').classList.remove('active');
+    document.getElementsByClassName('image-container')[2].classList.add('active');
+
+    document.querySelector('.thumb.active').classList.remove('active');
+    document.getElementsByClassName('thumb')[2].classList.add('active');
+
+    //aggiorniamo il numero active
+    elementActive = 2;
+})
+
+//click sulla quarta immagine
+image4.addEventListener('click', function() {
+    //image
+    document.querySelector('.image-container.active').classList.remove('active');
+    document.getElementsByClassName('image-container')[3].classList.add('active');
+
+    document.querySelector('.thumb.active').classList.remove('active');
+    document.getElementsByClassName('thumb')[3].classList.add('active');
+
+    //aggiorniamo il numero active
+    elementActive = 3;
+})
+
+//click sulla quinta immagine
+image5.addEventListener('click', function() {
+    //image
+    document.querySelector('.image-container.active').classList.remove('active');
+    document.getElementsByClassName('image-container')[4].classList.add('active');
+
+    document.querySelector('.thumb.active').classList.remove('active');
+    document.getElementsByClassName('thumb')[4].classList.add('active');
+
+    //aggiorniamo il numero active
+    elementActive = 4;
 })
