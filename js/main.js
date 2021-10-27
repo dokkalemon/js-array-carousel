@@ -41,3 +41,7 @@ const textCollection = [
 ];
 
 
+//ref
+const imagesReference = document.querySelector('.images');
+const thumbsReference = document.querySelector('.thumbs');
+
