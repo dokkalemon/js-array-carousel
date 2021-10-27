@@ -45,3 +45,23 @@ const textCollection = [
 const imagesReference = document.querySelector('.images');
 const thumbsReference = document.querySelector('.thumbs');
 
+//creare elenchi foto sia per images che per thumb
+for (let i = 0; i < imageCollection.length; i++) {
+
+    //image
+    imagesReference.innerHTML += `
+        <div class="image-container">
+            <img src="${imageCollection[i]}" alt="${titleCollection[i]}">
+            <div class="text">
+                <h3>${titleCollection[i]}</h3>
+                <p>${textCollection[i]}</p>
+            </div>
+        </div>`;
+
+
+    //thumbnails
+    thumbsReference.innerHTML += `
+        <div class="thumb">
+            <img src="${imageCollection[i]}" alt="${titleCollection[i]}">
+        </div>`;
+}
