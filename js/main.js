@@ -71,3 +71,8 @@ let elementActive = 0;
 
 document.getElementsByClassName('image-container')[elementActive].classList.add('active');
 document.getElementsByClassName('thumb')[elementActive].classList.add('active');
+
+//reference prev and next
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
