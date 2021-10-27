@@ -86,7 +86,6 @@ next.addEventListener('click', function(){
         } else {
             elementActive++;
         }
-        console.log(elementActive);
 
 
     //image
