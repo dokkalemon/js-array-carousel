@@ -64,4 +64,10 @@ for (let i = 0; i < imageCollection.length; i++) {
         <div class="thumb">
             <img src="${imageCollection[i]}" alt="${titleCollection[i]}">
         </div>`;
-}
+};
+
+//individuare l'elemento active;
+let elementActive = 0;
+
+document.getElementsByClassName('image-container')[elementActive].classList.add('active');
+document.getElementsByClassName('thumb')[elementActive].classList.add('active');
