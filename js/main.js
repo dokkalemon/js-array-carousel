@@ -97,3 +97,21 @@ next.addEventListener('click', function(){
     document.getElementsByClassName('thumb')[elementActive].classList.add('active');
 });
 
+//PREV: azione al click
+prev.addEventListener('click', function() {
+
+
+    if (elementActive <= 0) {
+        elementActive = 4;
+    } else {
+        elementActive--
+    }
+    
+    //image
+    document.querySelector('.image-container.active').classList.remove('active');
+    document.getElementsByClassName('image-container')[elementActive].classList.add('active');
+
+    //thumb
+    document.querySelector('.thumb.active').classList.remove('active');
+    document.getElementsByClassName('thumb')[elementActive].classList.add('active');
+})
