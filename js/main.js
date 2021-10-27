@@ -76,3 +76,24 @@ document.getElementsByClassName('thumb')[elementActive].classList.add('active');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
+
+//NEXT: azione al click
+next.addEventListener('click', function(){
+
+
+        if (elementActive === imageCollection.length - 1) {
+            elementActive = 0
+        } else {
+            elementActive++;
+        }
+        console.log(elementActive);
+
+
+    //image
+    document.querySelector('.image-container.active').classList.remove('active');
+    document.getElementsByClassName('image-container')[elementActive].classList.add('active');
+    //thumbs
+    document.querySelector('.thumb.active').classList.remove('active');
+    document.getElementsByClassName('thumb')[elementActive].classList.add('active');
+});
+
